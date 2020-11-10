@@ -10,7 +10,7 @@ text-shadow: 3px 3px #999999;
 text-align: center;
 }
 .head{
-	background-image: url('images/rgb.png');
+	background-image: url("images/rbg.png");
 }
 .left{
 	float:left;
@@ -19,10 +19,10 @@ text-align: center;
 }
 .right{
 	float:left;
-	width:30%;
-}
-.centar{
-	background-color: #A2B964;
+	width:30%;}
+	
+.centar{	
+	background-color: #A2B964 ;
 	margin: auto;
 	width: 55%;
 	padding:0;
@@ -30,4 +30,16 @@ text-align: center;
 .slika{
 	float: left;
 	width: 100%;
+}
+.procenti{
+	color: red;
+	font-size: 48pt;
+	font-family: Arial;
+	font-style: bold;
+	vertical-align: text-bottom;
+}
+.clear::after, .clear1::after{
+	content: "";
+	clear:both;
+	display: table;
 }
