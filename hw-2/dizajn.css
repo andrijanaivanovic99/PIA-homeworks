@@ -18,3 +18,13 @@ h1{
 p{
 	font-size: 20px;
 }
+footer{
+	text-align: center; 
+	background-color: rgb(20, 20, 20);
+	padding: 1.10%;
+	color: white;
+}
+
+button{
+	margin-top: 250px;
+}
