@@ -28,3 +28,8 @@ h1{
     color: black;
     font-size: 10pt;
 }
+
+button{
+    background-color: pink;
+    color: black;
+}
