@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("u.png");
+}
+
+.pravila{
+    width:500px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
