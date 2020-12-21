@@ -8,4 +8,23 @@ body{
     width:500px;
     margin-top: 150px;
     margin-bottom: 150px;
+    text-align: center;
+    padding: 15px;
+}
+
+p{
+    font-size: 15pt;
+    font-style: italic;
+    color: black;
+
+}
+
+h1{
+    color: black;
+}
+
+#start{
+    float: right;
+    color: black;
+    font-size: 10pt;
 }
