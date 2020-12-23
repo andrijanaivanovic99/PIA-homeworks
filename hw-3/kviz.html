@@ -25,6 +25,10 @@
             <div class="col-md-6">
             <button id="odg4">Odgovor4</button>
             </div>
+            <div class="row odustani">
+                <button id="preskoci">Preskocite pitanje</button>
+                <button id="odustani">Odustani</button>
+            </div>
 
         </div>
         <script>
@@ -37,23 +41,144 @@
             });
             }
             var brojPitanja = 0;
-            var brojac = true;
+            var brojac = 0;
             var interval = setInterval(prikazPitanja, 1000);
+            var pitanje = document.getElementById("pitanje");
+            var odg1 = document.getElementById("odg1");
+            var odg2 = document.getElementById("odg2");
+            var odg3 = document.getElementById("odg3");
+            var odg4 = document.getElementById("odg4");
             function prikazPitanja(){
-                if(brojPitanja<10)
-                document.getElementById("pitanje").innerHTML = pitanja[brojPitanja].pitanje;
-                document.getElementById("odg1").innerHTML = pitanja[brojPitanja].A;
-                document.getElementById("odg2").innerHTML = pitanja[brojPitanja].B;
-                document.getElementById("odg3").innerHTML = pitanja[brojPitanja].C;
-                document.getElementById("odg4").innerHTML = pitanja[brojPitanja].D;
+                if(brojPitanja<10){
+                pitanje.innerHTML = pitanja[brojPitanja].pitanje;
+                odg1.innerHTML = pitanja[brojPitanja].A;
+                odg2.innerHTML = pitanja[brojPitanja].B;
+                odg3.innerHTML = pitanja[brojPitanja].C;
+                odg4.innerHTML = pitanja[brojPitanja].D;
                 brojPitanja++;
-                broj= false;
-                if (brojac == false){
+                brojac++;
+                if (brojac == 1){
                     clearInterval(interval);
-                    brojac=true;
+                    
                 }
 
+                odg1.style.background= "pink";
+                odg2.style.background= "pink";
+                odg3.style.background= "pink";
+                odg4.style.background= "pink";
+
+                odg1.style.pointerEvents = "all";
+                odg2.style.pointerEvents = "all";
+                odg3.style.pointerEvents = "all";
+                odg4.style.pointerEvents = "all";
+
             }
+        
+
+            }
+            var preskociDugme = document.getElementById("preskoci");
+            preskociDugme.onclick = () =>{
+                prikazPitanja();
+            }
+
+            
+                
+             var tacanOdg;
+
+
+                odg1.onclick = () => {
+                    tacanOdg = pitanja[brojPitanja-1].TacanOdg;
+                    if(odg1.innerHTML == tacanOdg){
+                        odg1.style.backgroundColor = "green";
+
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+
+                    else{
+                        odg1.style.backgroundColor = "red";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+                    prikazPitanja();
+
+                    
+
+                }
+
+                odg2.onclick=() =>{
+                    tacanOdg = pitanja[brojPitanja-1].TacanOdg;
+                    if(odg2.innerHTML == tacanOdg){
+                        odg2.style.backgroundColor = "green";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+
+                    else{
+                        odg2.style.backgroundColor = "red";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+                    prikazPitanja();
+
+
+                }
+
+                odg3.onclick=() =>{
+                    tacanOdg = pitanja[brojPitanja-1].TacanOdg;
+                    if(odg3.innerHTML == tacanOdg){
+                        odg3.style.backgroundColor = "green";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+
+                    else{
+                        odg3.style.backgroundColor = "red";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+                    prikazPitanja();
+
+                }
+
+                odg4.onclick=() =>{
+                    tacanOdg = pitanja[brojPitanja-1].TacanOdg;
+                    if(odg4.innerHTML == tacanOdg){
+                        odg4.style.backgroundColor = "green";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+
+                    else{
+                        odg4.style.backgroundColor = "red";
+                        odg1.style.pointerEvents = "none";
+                        odg2.style.pointerEvents = "none";
+                        odg3.style.pointerEvents = "none";
+                        odg4.style.pointerEvents = "none";
+                    }
+                    prikazPitanja();
+
+                }
+
+
+
+
+            
+
         </script>
     </body>
 </html>

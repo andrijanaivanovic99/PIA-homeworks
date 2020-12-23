@@ -8,15 +8,15 @@
         "TacanOdg":"Beograd"
     },
     {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
+        "pitanje":"Ko je napisao roman 'Rat i mir'?",
+        "A":"Fjord Mihajlovic Dostojevski",
+        "B":"Lav Nikolajevic Tolstoj",
+        "C":"Sergej Aleksandrovic Jesenjin",
+        "D":"Dobrica Cosic",
+        "TacanOdg":"Lav Nikolajevic Tolstoj"
     },
     {
-        "pitanje":"Koji je glavni grad Srbije?",
+        "pitanje":"Koje godine je zavrsen Drugi svetski rat?",
         "A":"Tokio",
         "B":"Beograd",
         "C":"Sarajevo",

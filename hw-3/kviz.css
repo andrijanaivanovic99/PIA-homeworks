@@ -25,5 +25,19 @@ body{
 button{
     background-color: pink;
     color: black;
-
+    width: 200px;
+}
+.odustani button{
+    background-color: pink;
+    color: black;
+    width: 150px;
+   
+}
+.odustani #odustani{
+    float:left;
+    margin-left: 49px;
+}
+.odustani #preskoci{
+    float:right;
+    margin-right: 49px;
 }
