@@ -9,6 +9,11 @@
     </head>
     <body onload="funkcija()">
     <div class="container kviz">
+
+        <div class="row tajmer">
+            <p id="vreme"> Vreme za odgovor je 20s</p>
+        </div>
+
         <div class="row pitanje">
             <p id="pitanje">Pitanje</p>
         </div>
@@ -48,6 +53,7 @@
             var odg2 = document.getElementById("odg2");
             var odg3 = document.getElementById("odg3");
             var odg4 = document.getElementById("odg4");
+            var poeni = 0;
             function prikazPitanja(){
                 if(brojPitanja<10){
                 pitanje.innerHTML = pitanja[brojPitanja].pitanje;
@@ -71,6 +77,7 @@
                 odg2.style.pointerEvents = "all";
                 odg3.style.pointerEvents = "all";
                 odg4.style.pointerEvents = "all";
+                console.log(poeni);
 
             }
         
@@ -90,6 +97,7 @@
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg1.innerHTML == tacanOdg){
                         odg1.style.backgroundColor = "green";
+                        poeni++;
 
                         odg1.style.pointerEvents = "none";
                         odg2.style.pointerEvents = "none";
@@ -114,6 +122,7 @@
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg2.innerHTML == tacanOdg){
                         odg2.style.backgroundColor = "green";
+                        poeni++;
                         odg1.style.pointerEvents = "none";
                         odg2.style.pointerEvents = "none";
                         odg3.style.pointerEvents = "none";
@@ -136,6 +145,7 @@
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg3.innerHTML == tacanOdg){
                         odg3.style.backgroundColor = "green";
+                        poeni++;
                         odg1.style.pointerEvents = "none";
                         odg2.style.pointerEvents = "none";
                         odg3.style.pointerEvents = "none";
@@ -157,6 +167,7 @@
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg4.innerHTML == tacanOdg){
                         odg4.style.backgroundColor = "green";
+                        poeni++;
                         odg1.style.pointerEvents = "none";
                         odg2.style.pointerEvents = "none";
                         odg3.style.pointerEvents = "none";

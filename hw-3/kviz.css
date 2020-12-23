@@ -41,3 +41,11 @@ button{
     float:right;
     margin-right: 49px;
 }
+
+.tajmer #vreme{
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin 49px;
+}
