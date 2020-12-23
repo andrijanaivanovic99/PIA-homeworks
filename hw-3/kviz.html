@@ -7,25 +7,53 @@
         <link rel="stylesheet" href="kviz.css">
 
     </head>
-    <body>
+    <body onload="funkcija()">
     <div class="container kviz">
         <div class="row pitanje">
-            <p>Pitanje</p>
+            <p id="pitanje">Pitanje</p>
         </div>
         <div class="odgovori">
             <div class="col-md-6">
-            <button>Odgovor1</button>
+            <button id="odg1">Odgovor1</button>
             </div>
             <div class="col-md-6">
-            <button>Odgovor3</button>
+            <button id="odg3">Odgovor3</button>
             </div>
             <div class="col-md-6">
-            <button>Odgovor2</button>
+            <button id="odg2">Odgovor2</button>
             </div>
             <div class="col-md-6">
-            <button>Odgovor4</button>
+            <button id="odg4">Odgovor4</button>
             </div>
 
         </div>
+        <script>
+            var pitanja;
+            function funkcija(){
+            fetch('pitanja.json').then(function(response){
+                return response.json();
+            }).then(function (obj) {
+                pitanja = obj;
+            });
+            }
+            var brojPitanja = 0;
+            var brojac = true;
+            var interval = setInterval(prikazPitanja, 1000);
+            function prikazPitanja(){
+                if(brojPitanja<10)
+                document.getElementById("pitanje").innerHTML = pitanja[brojPitanja].pitanje;
+                document.getElementById("odg1").innerHTML = pitanja[brojPitanja].A;
+                document.getElementById("odg2").innerHTML = pitanja[brojPitanja].B;
+                document.getElementById("odg3").innerHTML = pitanja[brojPitanja].C;
+                document.getElementById("odg4").innerHTML = pitanja[brojPitanja].D;
+                brojPitanja++;
+                broj= false;
+                if (brojac == false){
+                    clearInterval(interval);
+                    brojac=true;
+                }
+
+            }
+        </script>
     </body>
 </html>
