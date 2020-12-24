@@ -15,20 +15,20 @@
         </div>
 
         <div class="row pitanje">
-            <p id="pitanje">Pitanje</p>
+            <p id="pitanje"></p>
         </div>
         <div class="odgovori">
             <div class="col-md-6">
-            <button id="odg1">Odgovor1</button>
+            <button id="odg1"></button>
             </div>
             <div class="col-md-6">
-            <button id="odg3">Odgovor3</button>
+            <button id="odg3"></button>
             </div>
             <div class="col-md-6">
-            <button id="odg2">Odgovor2</button>
+            <button id="odg2"></button>
             </div>
             <div class="col-md-6">
-            <button id="odg4">Odgovor4</button>
+            <button id="odg4"></button>
             </div>
             <div class="row odustani">
                 <button id="preskoci">Preskocite pitanje</button>
@@ -80,6 +80,9 @@
                 console.log(poeni);
 
             }
+            else{
+                window.location.href="kraj.html";
+            }
         
 
             }
@@ -88,6 +91,10 @@
                 prikazPitanja();
             }
 
+            var odustaniDugme = document.getElementById("odustani");
+            odustaniDugme.onclick= () => {
+                window.location.href = "kraj.html";
+            }
             
                 
              var tacanOdg;
