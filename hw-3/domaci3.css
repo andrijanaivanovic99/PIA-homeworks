@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("u.png");
+    background-image: url("1.jpg");
 }
 .pocetna{
     width:500px;
@@ -9,6 +9,9 @@ body{
     margin-bottom: 100px;
     text-align: center;
     padding:60px;
+    border-style: solid;
+    border-width: thick;
+
 }
 
 #btn{

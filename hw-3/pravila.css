@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("u.png");
+    background-image: url("2.jpg");
 }
 
 .pravila{
@@ -21,7 +21,7 @@ p{
 
 h1{
     color: black;
-}
+    font-style: bold;
 
 #start{
     float: right;
