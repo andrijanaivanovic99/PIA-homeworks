@@ -47,7 +47,7 @@
             }
             var brojPitanja = 0;
             var brojac = 0;
-            var interval = setInterval(prikazPitanja, 0);
+            setTimeout(prikazPitanja, 500);
             var pitanje = document.getElementById("pitanje");
             var odg1 = document.getElementById("odg1");
             var odg2 = document.getElementById("odg2");
@@ -56,6 +56,7 @@
             var poeni = 0;
             function prikazPitanja(){
                 if(brojPitanja<10){
+                prikazTajmera();
                 pitanje.innerHTML = pitanja[brojPitanja].pitanje;
                 odg1.innerHTML = pitanja[brojPitanja].A;
                 odg2.innerHTML = pitanja[brojPitanja].B;
@@ -63,10 +64,7 @@
                 odg4.innerHTML = pitanja[brojPitanja].D;
                 brojPitanja++;
                 brojac++;
-                if (brojac == 1){
-                    clearInterval(interval);
-                    
-                }
+              
 
                 odg1.style.background= "pink";
                 odg2.style.background= "pink";
@@ -88,19 +86,22 @@
             }
             var preskociDugme = document.getElementById("preskoci");
             preskociDugme.onclick = () =>{
+                flag = true;
                 prikazPitanja();
             }
 
             var odustaniDugme = document.getElementById("odustani");
             odustaniDugme.onclick= () => {
+                flag = true;
                 window.location.href = "kraj.html";
             }
             
                 
              var tacanOdg;
-
+             var flag = false;
 
                 odg1.onclick = () => {
+                    flag = true;
                     setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg1.innerHTML == tacanOdg){
@@ -127,6 +128,7 @@
                 }
 
                 odg2.onclick=() =>{
+                    flag = true;
                     setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg2.innerHTML == tacanOdg){
@@ -151,6 +153,7 @@
                 }
 
                 odg3.onclick=() =>{
+                    flag = true;
                     setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg3.innerHTML == tacanOdg){
@@ -173,6 +176,7 @@
                 }
 
                 odg4.onclick=() =>{
+                    flag = true;
                     setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg4.innerHTML == tacanOdg){
@@ -194,6 +198,26 @@
                     
 
                 }
+
+            var tajmer = 20;
+
+            function prikazTajmera(){
+
+                tajmer = 20;
+
+                var int = setInterval( function(){
+                    if(flag){
+                        clearInterval(int);
+                        flag = false;
+                    }
+                    if(tajmer <=0){
+                        clearInterval(int);
+                    }
+                    document.getElementById("vreme").innerHTML = "Preostalo vreme je: " + tajmer;
+                    tajmer--;
+                }, 1000); 
+
+            }
         </script>
     </body>
 </html>
