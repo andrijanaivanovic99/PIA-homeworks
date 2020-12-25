@@ -11,7 +11,7 @@
     <div class="container kviz">
 
         <div class="row tajmer">
-            <p id="vreme"> Vreme za odgovor je 20s</p>
+            <p id="vreme"> Preostalo vreme je: 20s</p>
         </div>
 
         <div class="row pitanje">
@@ -31,7 +31,7 @@
             <button id="odg4"></button>
             </div>
             <div class="row odustani">
-                <button id="preskoci">Preskocite pitanje</button>
+                <button id="preskoci">Preskočite pitanje</button>
                 <button id="odustani">Odustani</button>
             </div>
 
@@ -101,6 +101,7 @@
 
 
                 odg1.onclick = () => {
+                    setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg1.innerHTML == tacanOdg){
                         odg1.style.backgroundColor = "green";
@@ -119,13 +120,14 @@
                         odg3.style.pointerEvents = "none";
                         odg4.style.pointerEvents = "none";
                     }
-                    prikazPitanja();
+                    
 
                     
 
                 }
 
                 odg2.onclick=() =>{
+                    setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg2.innerHTML == tacanOdg){
                         odg2.style.backgroundColor = "green";
@@ -143,12 +145,13 @@
                         odg3.style.pointerEvents = "none";
                         odg4.style.pointerEvents = "none";
                     }
-                    prikazPitanja();
+                
 
 
                 }
 
                 odg3.onclick=() =>{
+                    setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg3.innerHTML == tacanOdg){
                         odg3.style.backgroundColor = "green";
@@ -166,11 +169,11 @@
                         odg3.style.pointerEvents = "none";
                         odg4.style.pointerEvents = "none";
                     }
-                    prikazPitanja();
 
                 }
 
                 odg4.onclick=() =>{
+                    setTimeout(prikazPitanja, 2000);
                     tacanOdg = pitanja[brojPitanja-1].TacanOdg;
                     if(odg4.innerHTML == tacanOdg){
                         odg4.style.backgroundColor = "green";
@@ -188,7 +191,7 @@
                         odg3.style.pointerEvents = "none";
                         odg4.style.pointerEvents = "none";
                     }
-                    prikazPitanja();
+                    
 
                 }
         </script>

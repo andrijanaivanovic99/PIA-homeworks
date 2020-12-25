@@ -10,6 +10,7 @@ body{
     text-align: center;
     font-weight: bolder;
     margin-bottom: 30px;
+    border-radius: 3pt;
 }
 .kviz{
     width: 600px;
@@ -25,7 +26,7 @@ body{
 button{
     background-color: pink;
     color: black;
-    width: 200px;
+    width: 250px;
 }
 .odustani button{
     background-color: pink;
@@ -35,11 +36,11 @@ button{
 }
 .odustani #odustani{
     float:left;
-    margin-left: 49px;
+    margin-left: 33px;
 }
 .odustani #preskoci{
     float:right;
-    margin-right: 49px;
+    margin-right: 33px;
 }
 
 .tajmer #vreme{
@@ -47,5 +48,5 @@ button{
     font-weight: bolder;
     color: rgb(0, 0, 0);
     float: right;
-    margin 49px;
+    margin 50px;
 }

@@ -4,79 +4,79 @@
         "A":"Tokio",
         "B":"Beograd",
         "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
+        "D":"Kragujevac",
         "TacanOdg":"Beograd"
     },
     {
         "pitanje":"Ko je napisao roman 'Rat i mir'?",
         "A":"Fjord Mihajlovic Dostojevski",
-        "B":"Lav Nikolajevic Tolstoj",
-        "C":"Sergej Aleksandrovic Jesenjin",
-        "D":"Dobrica Cosic",
-        "TacanOdg":"Lav Nikolajevic Tolstoj"
+        "B":"Lav Nikolajevič Tolstoj",
+        "C":"Sergej Aleksandrovič Jesenjin",
+        "D":"Dobrica Ćosić",
+        "TacanOdg":"Lav Nikolajevič Tolstoj"
     },
     {
         "pitanje":"Koje godine je zavrsen Drugi svetski rat?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
+        "A":"1943.",
+        "B":"1944.",
+        "C":"1945.",
+        "D":"1946.",
+        "TacanOdg":"1945."
+    },
+    {
+        "pitanje":"Koje je tradicionalno meksikansko piće?",
+        "A":"Rakija",
+        "B":"Tekila",
+        "C":"Vodka",
+        "D":"Voćni sok",
+        "TacanOdg":"Tekila"
+    },
+    {
+        "pitanje":"Ako binarni broj 1111 prevedemo u decimalni, dobićemo broj:",
+        "A":"2",
+        "B":"10",
+        "C":"1000",
+        "D":"Ništa od ponuđenog",
+        "TacanOdg":"Ništa od ponuđenog"
+    },
+    {
+        "pitanje":"Ko je izabran za najboljeg sportistu godine(izvor časopis Tajm)?",
+        "A":"Novak Đoković",
+        "B":"Krsitijano Ronaldo",
+        "C":"Lebron Džejms",
+        "D":"Nikola Jokić",
         "TacanOdg":"Beograd"
     },
     {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
+        "pitanje":"Koji je najviši planinski vrh u Srbiji?",
+        "A":"Đeravica",
+        "B":"Crni vrh",
+        "C":"Pančićev vrh",
+        "D":"Midžor",
+        "TacanOdg":"Đeravica"
     },
     {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
+        "pitanje":"Ko prenosi lajmsku bolest?",
+        "A":"Komarac",
+        "B":"Slepi miš",
+        "C":"Krpelj",
+        "D":"Pacov",
+        "TacanOdg":"Krpelj"
     },
     {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
+        "pitanje":"Da bismo zapisali da li je nešto tačno ili ne, minimalno je potrebno:",
+        "A":"1 bit",
+        "B":"2 bita",
+        "C":"3 bita",
+        "D":"4 bita",
+        "TacanOdg":"1 bit"
     },
     {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
+        "pitanje":"U blizini kog grada se nalazi istraživačka stanica Petnica?",
+        "A":"Valjevo",
         "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
-    },
-    {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
-    },
-    {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
-    },
-    {
-        "pitanje":"Koji je glavni grad Srbije?",
-        "A":"Tokio",
-        "B":"Beograd",
-        "C":"Sarajevo",
-        "D":"Nista od ponudjenog",
-        "TacanOdg":"Beograd"
+        "C":"Niš",
+        "D":"Kragujevac",
+        "TacanOdg":"Valjevo"
     }
 ]
