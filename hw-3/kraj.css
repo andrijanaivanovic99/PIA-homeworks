@@ -6,12 +6,14 @@ body{
 
 .kraj{
     width: 400px;
-    border: 5px soild pink;
+    border: 5px soild black;
 
 }
 .kraj p{
     display: block;
     font-size: 25pt;
     font-family: fantasy;
-    color: pink;
+    color:black;
+    margin-top: 50px;
+    border: 5px soild black;
 }
