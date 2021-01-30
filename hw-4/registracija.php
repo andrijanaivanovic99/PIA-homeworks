@@ -10,7 +10,7 @@
         <body>
 
         <div class="container registracija">
-                    <h2>Registrujtekzdfjfdjise</h2>
+                    <h2>Registrujte se</h2>
 
                         <form action="medjufajl.php" method="post">
                             <input name="first-name" id="ime" class="form-control" type="text" autocomplete="off" placeholder="Vaše ime">

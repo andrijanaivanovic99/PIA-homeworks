@@ -11,9 +11,11 @@
     <body>
             <div class="container prijava">
                 <h2> Ulogujte se</h2>
-                <input id="username" class="form-control" type="text" autocomplete="off" placeholder="Korisničko ime ili email adresa">
-                <input id="password" class="form-control" type="text" placeholder="Lozinka">
-                <a id="prijava"  href="#"> Prijavite se</a>
+                <form action= "prijavamedjufajl.php" method="post">
+                <input name="usr" id="username" class="form-control" type="text" autocomplete="off" placeholder="Korisničko ime ili email adresa">
+                <input name= "pass" id="password" class="form-control" type="text" placeholder="Lozinka">
+                <button type="submit" name="submit"> Prijavite se </button> 
+                </form>
              </div>
 
             
