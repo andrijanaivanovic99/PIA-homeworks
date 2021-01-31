@@ -1,0 +1,13 @@
+.filmovi .row .col-md-4 img{
+    width: 200px;
+    height: 250px;
+    
+}
+
+body{
+    background-image: url("../slike/pozadina.png");
+    font-family: Impact;
+    color: rgb(255, 54, 19);
+    text-align: center;
+    margin-top: 50px;
+}

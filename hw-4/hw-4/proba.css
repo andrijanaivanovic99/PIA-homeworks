@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/slike/pet.jpg);
+
+}
+
+.prijava{
+    width: 500px;
+    padding: 15px;
+    margin-top: 200px;
+    border: 2px solid violet;
+
+}
+.prijava h2{
+margin-bottom: 30px;
+text-align: center;
+}
+.prijava #username{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.prijava #password {
+    width: 250px;
+    margin-left: 105px;
+    margin-bottom: 20px;
+}
+.prijava #prijava{
+    display: block;
+    text-align: center;
+    width: 250px;
+    margin-left: 105px;
+
+}
+
+.registracija{
+    width: 500px;
+    padding: 15px;
+    margin-top: 100px;
+    border: 2px solid violet;
+    margin-bottom: 30px;
+
+}
+
+.registracija #ime{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.registracija #prezime{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.registracija #email{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.registracija #ime{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.registracija #korisnicko{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.registracija #lozinka{
+    margin-bottom: 20px ;
+    width: 250px;
+    margin-left: 105px;
+}
+
+.registracija h2{
+    margin-bottom: 30px;
+    text-align: center;
+    }
