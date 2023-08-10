@@ -1,20 +1,20 @@
 chapters:
 - chapters: []
   folderName: main
-  name: README
-  path: README.md
+  name: README.
+  path: README..md
   sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
   type: MARKDOWN_CHAPTER
 - chapters:
   - chapters: []
     folderName: main
     name: images
-    path: hw-1/images
+    path: hw-123/ima
     sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
     type: FOLDER_CHAPTER
   folderName: main
   name: hw-1
-  path: hw-1
+  path: hw-123
   sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
   type: FOLDER_CHAPTER
 - chapters: []
