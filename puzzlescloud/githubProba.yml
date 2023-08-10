@@ -1,0 +1,45 @@
+chapters:
+- chapters: []
+  folderName: main
+  name: PIA-homeworks
+  path: README.md
+  sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
+  type: MARKDOWN_CHAPTER
+- chapters:
+  - chapters: []
+    folderName: main
+    name: images
+    path: hw-1/images
+    sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
+    type: FOLDER_CHAPTER
+  folderName: main
+  name: hw-1
+  path: hw-1
+  sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
+  type: FOLDER_CHAPTER
+- chapters: []
+  folderName: main
+  name: hw-3
+  path: hw-3
+  sourceURL: https://github.com/andrijanaivanovic99/PIA-homeworks
+  type: FOLDER_CHAPTER
+fieldValues:
+  doc-subtitle: ''
+  doc-type: ''
+  doc-author-email: ''
+  doc-title: ''
+  doc-company: ''
+  doc-company-url: ''
+  doc-version: ''
+  ' reference-doc-title ': ''
+  doc-release-date: ''
+  File Name: githubProba.docx
+  doc-change-description: ''
+  doc-author-name: ''
+  doc-id: ''
+  ' reference-doc-filename ': ''
+folderName: null
+name: ROOT
+path: null
+sourceURL: null
+type: null
